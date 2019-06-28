@@ -1,0 +1,98 @@
+# Basic Operations {#intro}
+
+## Arithmetic and Variables
+
+* Basic arithmetic: +\ -\ *\ \%
+```ruby
+q)21+33
+54
+q)11-5
+6
+q)7*7
+49
+q)12%2
+6f /the "f" denotes that the number is a float
+```
+
+* Right to left execution
+```ruby
+q)5*2+3
+25
+```
+* Use brackets as precedence
+```ruby
+q)(5*2)+3
+13
+```
+* Comments can be made after a ’/’ :
+```ruby
+q)a:1 /this is a comment
+q)a
+1
+```
+* Assign variables using ‘:’ instead of ‘=’
+```ruby
+q)a:2
+q)b:3
+q)c:4
+q)d:a*b*c
+q)d
+24
+```
+* ‘=’ is used for comparison
+```ruby
+q)a:2
+q)b:3
+q)3=2
+0b /indicating that the statement 'a equals b' is false
+q)5.0=5
+```
+
+* Comparison can be:
+```ruby
+>= /Greater than or equal to
+> /Greater than
+<= /Less than or equal to
+< /Less than
+= /Equal
+<> /Not equal
+~ /Match - examined in the next section
+```
+
+* For example:
+```ruby
+q)4>1
+1b
+q)10<>4
+1b
+q)8>=8
+1b
+q)6<=3
+```
+* Assignments can be combined in a single operation:
+```ruby
+q)x:10
+q)x:x+1
+q)x
+11
+q)x+:1
+12
+q)x*:3
+q)x
+36
+```
+
+* Multi-assignment can be performed on one line:
+```ruby
+q)c:1+b:3*a:2
+q)a
+2
+q)b
+6
+q)c
+```
+* Use nv to check variable names:
+```ruby
+q)\v
+`a`b`c`d`x
+```
