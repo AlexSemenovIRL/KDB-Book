@@ -1,5 +1,5 @@
 --- 
-title: "TEST"
+title: "Introduction to kdb+"
 author: "Alex Semenov"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
